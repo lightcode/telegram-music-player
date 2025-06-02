@@ -1,0 +1,10 @@
+[Unit]
+Description=Telegram bot for controlling MPD
+After=multi-user.target
+
+[Service]
+EnvironmentFile=/etc/jukebot.env
+ExecStart=/usr/local/bin/jukebot
+
+[Install]
+WantedBy=multi-user.target
